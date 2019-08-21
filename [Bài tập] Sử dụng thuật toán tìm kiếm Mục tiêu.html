@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cho một danh sách các số điện thoại thuộc các nhà mạng khác nhau. Hãy tìm các số điện thoại thuộc nhà mạng Viettel.</title>
+</head>
+<body>
+<!--<input type="text" oninput="test()">-->
+<!--<p id="value"></p>-->
+<script>
+  function test(){
+    let arr = ["0974546656","0386489112","0712367853"];
+    let regex = /^(0)[3]{1}[1-9]{1}|(0)[9]{1}[7]{1}[0-9]{7}$ /;
+    for ( let i = 0; i < arr.length ; i++)
+    {
+      if(regex.test(arr[i]))
+      {
+      console.log("đúng");
+      }
+      else
+      {
+        console.log("sai");
+      }
+    }
+
+  }
+  test();
+
+
+</script>
+</body>
+</html>

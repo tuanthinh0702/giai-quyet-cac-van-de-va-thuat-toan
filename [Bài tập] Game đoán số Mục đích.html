@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Game đoán số Mục đích</title>
+</head>
+<body>
+<script>
+var mang = [1,2,3,4,6,8,9];
+var nhapphantu = prompt("nhập phần tử muốn tìm kiếm");
+function seaSearch(arr, str) {
+  for( let i = 0 ; i < mang.length ; i++)
+  {
+    if(mang[i]==str)
+    {
+      return true;
+    }
+  }
+  return false;
+
+  
+}
+seaSearch(mang,nhapphantu);
+
+</script>
+</body>
+</html>
